@@ -174,11 +174,14 @@ gap: 10rem;
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+
   }
-  
+
   .btn:hover {
     background: linear-gradient(#F2FD7D);
+    color: #28443F;
   }
+
   
   /* Social Icons */
   .socials {
