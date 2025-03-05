@@ -1,0 +1,48 @@
+.certified {
+    margin-top: -10vh;
+    text-align: center;
+    font-size: 4rem;
+    padding-left: 8rem ;
+    color: #F2FD7D;
+  }
+    .certificate {
+      width: 90%; /* Adjust width as needed (e.g., 100%, 70%, etc.) */
+      display: flex;
+      gap: 10px;
+      overflow-x: scroll;
+    }
+    .box {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      flex: none;
+    }
+    img {
+      width: 100%;
+      filter: grayscale(100%);
+      transition: transform 0.5s;
+    }
+  .certificate::-webkit-scrollbar{
+    display: none;
+  }
+  .gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+  }
+  #left, #right {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+  }
+  img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  
