@@ -179,6 +179,8 @@ img:hover{
   transform: scale(1.1);
 }
 
+
+
   @keyframes gradient{
     0%{
       background-position: 0%;
