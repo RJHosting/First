@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Your Name</title>
+    <style>
+        .projects-container {
+            padding: 60px 20px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .tag {
+            background: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        .project-links {
+            margin-top: 15px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .project-links a:hover {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <section class="container projects-container">
+        <div class="about-header">
+            <h1>Projects</h1>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Repeat this block for each project -->
+            <div class="project-card">
+                <img src="project-thumbnail.jpg" alt="Project Name" class="project-image">
+                <div class="project-info">
+                    <h3>Project Title</h3>
+                    <p>Brief project description highlighting key features and your role in development.</p>
+                    
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank">Live Demo</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End project block -->
+        </div>
+    </section>
+</body>
+</html>
