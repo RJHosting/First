@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".contact-form");
+    const form = document.querySelector(".test");
 
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent default form submission
