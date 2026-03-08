@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -83,5 +83,237 @@
 </h3>
     </footer>
 <script src="scrip.js"></script>
+</body>
+</html>
+    -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roshan Joseph | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;}
+    body{background:#f5f5f5;color:#333;scroll-behavior:smooth;line-height:1.6;}
+    header{background:#2c3e50;color:#fff;padding:80px 20px;text-align:center;position:relative;overflow:hidden;}
+    header h1{font-size:3rem;margin-bottom:10px;}
+    header p{font-size:1.2rem;margin-bottom:5px;}
+    .typing{color:#2980b9;font-weight:700;}
+    nav{background:#34495e;display:flex;justify-content:center;padding:15px 0;position:sticky;top:0;z-index:1000;}
+    nav a{color:#fff;text-decoration:none;margin:0 20px;padding:5px 10px;position:relative;transition:0.3s;}
+    nav a::after{content:'';display:block;width:0%;height:2px;background:#2980b9;transition:width 0.3s;position:absolute;bottom:0;left:0;}
+    nav a:hover::after{width:100%;}
+    section{max-width:900px;margin:60px auto;padding:0 20px;opacity:0;transform:translateY(50px);transition:all 1s ease;}
+    section.visible{opacity:1;transform:translateY(0);}
+    h2{color:#2c3e50;margin-bottom:20px;border-bottom:2px solid #2c3e50;display:inline-block;padding-bottom:5px;}
+    ul{list-style:none;margin-bottom:20px;}
+    li{margin-bottom:10px;}
+    .contact a{color:#2980b9;text-decoration:none;}
+    .contact a:hover{text-decoration:underline;}
+    footer{text-align:center;padding:20px;background:#2c3e50;color:#fff;margin-top:40px;}
+    
+    /* Skills Progress Bars */
+    .skill{margin-bottom:15px;}
+    .skill-name{font-weight:700;margin-bottom:5px;}
+    .skill-bar{width:100%;background:#ddd;border-radius:25px;overflow:hidden;height:20px;}
+    .skill-bar-fill{height:100%;width:0%;background:#2980b9;text-align:right;line-height:20px;color:#fff;font-weight:700;border-radius:25px;transition:width 1.5s;}
+    
+    /* Work Experience Cards */
+    .experience{display:grid;gap:20px;}
+    .job{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:transform 0.3s,box-shadow 0.3s;cursor:pointer;position:relative;overflow:hidden;}
+    .job:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,0.2);}
+    .job::after{content:"Click for details";position:absolute;bottom:10px;right:10px;font-size:0.8rem;color:#2980b9;opacity:0;transition:opacity 0.3s;}
+    .job:hover::after{opacity:1;}
+    
+    /* Modal */
+    .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);justify-content:center;align-items:center;z-index:2000;}
+    .modal-content{background:#fff;padding:30px;border-radius:12px;max-width:700px;width:90%;position:relative;}
+    .close{position:absolute;top:10px;right:15px;font-size:1.5rem;font-weight:bold;color:#333;cursor:pointer;}
+    
+    /* Animations */
+    @keyframes fadeInDown{from{opacity:0;transform:translateY(-30px);}to{opacity:1;transform:translateY(0);}}
+    @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Roshan Joseph</h1>
+    <p>IT & Customer Service Professional | Windsor, ON, Canada</p>
+    <p class="contact">Mobile: +1 226-975-5291 | Email: <a href="mailto:roshanjosephrsj@gmail.com">roshanjosephrsj@gmail.com</a> | <a href="https://www.linkedin.com/in/rjhosting" target="_blank">LinkedIn</a></p>
+    <p class="typing"></p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+</nav>
+
+<section id="about">
+    <h2>Professional Summary</h2>
+    <p>Customer-focused professional with strong communication, technical, and analytical skills. Experienced in IT networking, helpdesk support, and customer service environments. Skilled in assisting users, resolving technical issues, and maintaining accurate records using CRM tools. Dedicated to delivering high-quality customer experiences and supporting continuous improvement.</p>
+</section>
+
+<section id="skills">
+    <h2>Core Skills</h2>
+    <div class="skill">
+        <div class="skill-name">Customer Service & CRM</div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="90%">90%</div></div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">Technical Support</div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="85%">85%</div></div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">Microsoft Office Suite</div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="80%">80%</div></div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">Networking Knowledge</div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="75%">75%</div></div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Work Experience</h2>
+    <div class="experience">
+        <div class="job" data-job="1">
+            <h3>Retail Associate / Customer Support</h3>
+            <span>Walmart Canada – Ontario, Canada | June 2025 – Feb 2026</span>
+        </div>
+        <div class="job" data-job="2">
+            <h3>IT Helpdesk Specialist (Co-op)</h3>
+            <span>St. Clair College – Windsor, Ontario, Canada | Sept 2024 – Dec 2024</span>
+        </div>
+        <div class="job" data-job="3">
+            <h3>Customer Service Representative</h3>
+            <span>Nalanda Edification – Kerala, India | March 2023 – Nov 2023</span>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <ul>
+        <li>Computer Systems Technician – Networking (Diploma), St. Clair College, Windsor, ON (2025)</li>
+    </ul>
+</section>
+
+<section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+        <li>CompTIA A+</li>
+        <li>CompTIA Network+</li>
+        <li>CompTIA Linux+</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 Roshan Joseph | Built with HTML, CSS & JS</p>
+</footer>
+
+<!-- Modal -->
+<div class="modal" id="jobModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalText"></div>
+    </div>
+</div>
+
+<script>
+// Typing effect for roles
+const typing = document.querySelector(".typing");
+const roles = ["IT Support Specialist", "Customer Service Expert", "Networking Technician"];
+let roleIndex=0, charIndex=0;
+
+function typeRole(){
+    if(charIndex<roles[roleIndex].length){
+        typing.textContent+=roles[roleIndex][charIndex];
+        charIndex++;
+        setTimeout(typeRole,100);
+    }else{
+        setTimeout(eraseRole,1500);
+    }
+}
+
+function eraseRole(){
+    if(charIndex>0){
+        typing.textContent=roles[roleIndex].substring(0,charIndex-1);
+        charIndex--;
+        setTimeout(eraseRole,50);
+    }else{
+        roleIndex=(roleIndex+1)%roles.length;
+        setTimeout(typeRole,200);
+    }
+}
+typeRole();
+
+// Animate sections on scroll
+const sections = document.querySelectorAll('section');
+const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting) entry.target.classList.add('visible');
+    });
+},{threshold:0.2});
+sections.forEach(section=>observer.observe(section));
+
+// Skills bars animation
+const skillBars=document.querySelectorAll('.skill-bar-fill');
+window.addEventListener('scroll',()=>{
+    skillBars.forEach(bar=>{
+        const rect=bar.getBoundingClientRect();
+        if(rect.top<window.innerHeight){
+            bar.style.width=bar.dataset.width;
+        }
+    });
+});
+
+// Modal functionality
+const modal=document.getElementById('jobModal');
+const modalText=document.getElementById('modalText');
+const closeBtn=document.querySelector('.close');
+const jobs=document.querySelectorAll('.job');
+
+const jobDetails = {
+    1:`<ul>
+        <li>Assisted customers with inquiries and purchases in a fast-paced retail environment.</li>
+        <li>Provided professional service to ensure positive customer experiences.</li>
+        <li>Handled transactions and maintained accurate records.</li>
+        <li>Collaborated with team members to maintain store efficiency.</li>
+        <li>Helped customers locate products and provided product information.</li>
+       </ul>`,
+    2:`<ul>
+        <li>Provided technical support for login, network, and system issues.</li>
+        <li>Troubleshot hardware and software problems in computer labs.</li>
+        <li>Installed and updated applications on lab machines.</li>
+        <li>Logged service tickets and documented solutions.</li>
+        <li>Set up and maintained lab equipment like printers and projectors.</li>
+        <li>Ensured lab systems operated smoothly following IT support procedures.</li>
+       </ul>`,
+    3:`<ul>
+        <li>Responded to customer inquiries via phone, email, and in-person.</li>
+        <li>Provided service information and assisted with registration.</li>
+        <li>Maintained accurate customer records and databases.</li>
+        <li>Resolved issues and escalated complex concerns to supervisors.</li>
+        <li>Demonstrated strong communication and problem-solving skills.</li>
+       </ul>`
+};
+
+jobs.forEach(job=>{
+    job.addEventListener('click',()=>{
+        const id=job.dataset.job;
+        modalText.innerHTML=jobDetails[id];
+        modal.style.display='flex';
+    });
+});
+
+closeBtn.addEventListener('click',()=>modal.style.display='none');
+window.addEventListener('click',e=>{if(e.target==modal) modal.style.display='none';});
+</script>
+
 </body>
 </html>
